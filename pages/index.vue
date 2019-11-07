@@ -34,11 +34,11 @@
               </b-tab>
               <b-tab title="Cambiar vuelo">
                 <label for="">Ingrese su ID de vuelo</label>
-                <b-form-input v-model="place" placeholder="ID vuelo"></b-form-input>
+                <b-form-input v-model="id_cambiar" placeholder="ID vuelo"></b-form-input>
               </b-tab>
               <b-tab title="Cancelar vuelo">
                 <label for="">Ingrese su ID de vuelo</label>
-                <b-form-input v-model="place" placeholder="ID vuelo"></b-form-input>
+                <b-form-input v-model="id_cancelar" placeholder="ID vuelo"></b-form-input>
               </b-tab>
             </b-tabs>
           </div>
@@ -62,7 +62,9 @@ export default {
     return {
       place:'',
       date:'',
-      isModal: false
+      isModal: false,
+      id_cambiar: '',
+      id_cancelar: ''
     }
 
   }
